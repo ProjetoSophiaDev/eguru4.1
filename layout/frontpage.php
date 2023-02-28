@@ -29,6 +29,9 @@ require_once($CFG->dirroot . '/course/lib.php');
 
 require_once(dirname(__FILE__) .'/includes/themedata.php');
 require_once(dirname(__FILE__) .'/includes/slideshow.php');
+require_once(dirname(__FILE__) . '/includes/frontpage_numbers.php');
+    
+
 // Add block button in editing mode.
 $addblockbutton = $OUTPUT->addblockbutton();
 
@@ -88,6 +91,7 @@ $header = $PAGE->activityheader;
 $headercontent = $header->export_for_template($renderer);
 // Slide show content.
 $slideshow = theme_eguru_frontpage_slideshow();
+echo $frontpage_numbers_layout;
 $templatecontext += [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
@@ -113,5 +117,6 @@ $templatecontext += [
 
 echo $OUTPUT->render_from_template('theme_eguru/frontpage', $templatecontext);
 
-    require_once(dirname(__FILE__) . '/includes/frontpage_numbers.php');
-    echo $frontpage_numbers_layout;
+
+
+
