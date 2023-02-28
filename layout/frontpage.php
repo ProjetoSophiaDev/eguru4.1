@@ -113,3 +113,5 @@ $templatecontext += [
 
 echo $OUTPUT->render_from_template('theme_eguru/frontpage', $templatecontext);
 
+    require_once(dirname(__FILE__) . '/includes/frontpage_numbers.php');
+    echo $frontpage_numbers_layout;
