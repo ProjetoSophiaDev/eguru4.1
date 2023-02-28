@@ -91,7 +91,7 @@ $header = $PAGE->activityheader;
 $headercontent = $header->export_for_template($renderer);
 // Slide show content.
 $slideshow = theme_eguru_frontpage_slideshow();
-echo $frontpage_numbers_layout;
+
 $templatecontext += [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
@@ -112,7 +112,7 @@ $templatecontext += [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
-    'slideshow' => $slideshow,
+    'slideshow' => $slideshow . $frontpage_numbers_layout,
 ];
 
 echo $OUTPUT->render_from_template('theme_eguru/frontpage', $templatecontext);
