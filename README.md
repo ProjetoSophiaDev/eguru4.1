@@ -15,4 +15,3 @@ Theme
 -Classic | ?theme=classic
 -Eguru | ?theme=eguru
 ```
-TESTE
