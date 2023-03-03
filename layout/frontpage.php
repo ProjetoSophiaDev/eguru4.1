@@ -117,6 +117,3 @@ $templatecontext += [
 
 echo $OUTPUT->render_from_template('theme_eguru/frontpage', $templatecontext);
 
-echo "TESTE";
-
-
