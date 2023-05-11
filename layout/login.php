@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 require_once(dirname(__FILE__) .'/includes/themedata.php');
 
 $bodyattributes = $OUTPUT->body_attributes();
+echo "Servidores e alunos da UTFPR podem autenticar no SOPHIA com o login e senha do Portal do aluno e Sistemas internos.";
 $templatecontext += [
     'sitename' => format_string($SITE->shortname, true, ['context' => context_course::instance(SITEID), "escape" => false]),
     'output' => $OUTPUT,
