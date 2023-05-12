@@ -33,4 +33,6 @@ $templatecontext += [
     'bodyattributes' => $bodyattributes,
 ];
 
+echo "Servidores e alunos da UTFPR podem autenticar no SOPHIA com o login e senha do Portal do aluno e Sistemas internos."
 echo $OUTPUT->render_from_template('theme_eguru/login', $templatecontext);
+
