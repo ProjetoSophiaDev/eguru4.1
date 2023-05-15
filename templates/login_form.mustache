@@ -106,7 +106,7 @@
             {{^logourl}}
                 <h2>{{sitename}}</h2>
             {{/logourl}}
-       <div class="box generalbox formsettingheading"><div class="alert alert-primary"><h3 style="text-align:center;"><span style="font-size:15px;"><strong>Servidores e alunos da UTFPR podem autenticar no SOPHIA com o login e senha do Portal do aluno e Sistemas internos. </strong></span></h3></div><h4 style="text-align:justify;"><span style="color:rgb(73,80,87);font-size:0.9375rem;"><br /></span></h4><h4 style="text-align:justify;"><span style="color:rgb(73,80,87);font-size:0.9375rem;">Usuários Externos à UTFPR podem se autenticar por meio de uma conta Google ou Microsoft.</span><br /></h4><p style="text-align:justify;"><span style="color:rgb(73,80,87);font-size:0.9375rem;">Para a utilização de outros domínios de e-mail você precisa criar uma conta preenchendo um formulário de cadastro. Ao optar pelo cadastro via formulário o acesso não será imediato.</span></p><p style="text-align:center;"><br /></p><div class="login-signup"><a class="btn btn-secondary" href="https://forms.gle/EbBMzt9fm4J7pMpv7" target="_blank" rel="noreferrer noopener">Criar uma conta</a></div></div>
+       
         </div>
 
         {{#cansignup}}
@@ -122,12 +122,14 @@
             </div>
         {{/error}}
 		
+		TESTE TESTE1
+		
         <div class="custom-login">
 
             <div class="">
                 <h2>{{#str}} loginheader, theme_eguru {{/str}} </h2>
 			
-		
+			<h2>TESTE TESTE2</h2>
 
                 <form class="m-t-1" action="{{loginurl}}" method="post" id="login" {{^passwordautocomplete}}autocomplete="off"{{/passwordautocomplete}}>
                     <input id="anchor" type="hidden" name="anchor" value="">
