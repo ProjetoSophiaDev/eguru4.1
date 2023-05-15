@@ -121,13 +121,12 @@
                 <div class="alert alert-danger" role="alert">{{error}}</div>
             </div>
         {{/error}}
-	
-	<div class="alert alert-primary" id="yui_3_17_2_1_1684164281458_20"><h4 style="text-align:center;" id="yui_3_17_2_1_1684164281458_29"><span style="font-size:10px;" id="yui_3_17_2_1_1684164281458_28">Servidores e alunos da UTFPR podem autenticar no SOPHIA com o login e senha do Portal do aluno e Sistemas internos.&nbsp;</span></h4></div>
-	
+		
         <div class="custom-login">
 
             <div class="">
                 <h2>{{#str}} loginheader, theme_eguru {{/str}} </h2>
+				<div class="alert alert-primary" id="yui_3_17_2_1_1684164281458_20"><h4 style="text-align:center;" id="yui_3_17_2_1_1684164281458_29"><span style="font-size:14px;" id="yui_3_17_2_1_1684164281458_28">Servidores e alunos da UTFPR podem autenticar no SOPHIA com o login e senha do Portal do aluno e Sistemas internos.</span></h4></div>
                 <form class="m-t-1" action="{{loginurl}}" method="post" id="login" {{^passwordautocomplete}}autocomplete="off"{{/passwordautocomplete}}>
                     <input id="anchor" type="hidden" name="anchor" value="">
                     <script>document.getElementById('anchor').value = location.hash;</script>
